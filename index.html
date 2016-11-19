@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Portfolio</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/icon.ico">
+</head> 
+<body>
+<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Open</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="site1.html"><img src="images/logo1.png" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul id="navigation" class="nav navbar-nav navbar-right">
+                <li id="m1" class="active"><a class="scroll-link" href="#">Home</a></li>
+                <li id="m2"><a class="scroll-link" href="#about">About me</a></li>
+                <li id="m3"><a class="scroll-link" href="#skill">Skills</a></li>
+                <li id="m4"><a class="scroll-link" href="#work">Portfolio</a></li>
+                <li id="m5"><a class="scroll-link" href="#kontakt">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section id="main-slider" class="no-margin">
+    <div class="carousel slide wet-asphalt">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url(images/bg1.jpg)">
+                <div class="home-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="carousel-content centered text-center">
+                                <p class="animation animated-item-1">Hello, my name is Yurii Strizhyk and I am</p>
+                                <h2 class="animation animated-item-2">JUNIOR FRONT END DEVELOPER</h2>
+                                <br>
+                                <ul><a class="btn btn-md animation animated-item-3 about-position" href="#about"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+</a></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/bg2.jpg)">
+                <div class="home-overlay"></div>
+            </div>
+            <div class="item" style="background-image: url(images/bg3.jpg)">
+                <div class="home-overlay"></div>
+            </div>
+        </div>
+    </div>
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <a class="next hidden-xs" href="#main-slider" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+</section>
+<section id="about">
+    <div class="about">
+        <div class="container text-center">
+            <h3>ABOUT ME</h3>
+            <hr class="small_2">
+            <p class="dummy-about animated fadeInUp wow">The last 5 years I am interested in programming. I received a diploma at the Faculty of Informatics. Now I am looking for practice / work that would help gain new skills as a programmer Front End.</p>
+            <ul>
+                <a href="#skill" class="about-position"><img src="images/down.png" alt=""></a>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="skill" class="animated fadeInUp wow skills">
+    <div class="container text-center">
+        <div class="row ">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h3>SKILLS</h3>
+                <hr class="small_1">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="progress animated fadeInUp wow">
+                            <div class="progress-bar" style="width: 85%;">
+                            </div>
+                            <span class="progress-type">HTML5</span>
+                        </div>
+                        <div class="progress animated fadeInUp wow">
+                            <div class="progress-bar progress-bar-success" style="width: 85%">
+                            </div>
+                            <span class="progress-type">CSS3</span>
+                        </div>
+                        <div class="progress animated fadeInUp wow">
+                            <div class="progress-bar progress-bar-info" style="width: 50%">
+                            </div>
+                            <span class="progress-type">JavaScript</span>
+                        </div>
+                        <div class="progress animated fadeInUp wow">
+                            <div class="progress-bar progress-bar-warning" style="width: 50%">
+                            </div>
+                            <span class="progress-type">jQuery</span>
+                        </div>
+                        <div class="progress animated fadeInUp wow">
+                            <div class="progress-bar progress-bar-danger" style="width: 40%">
+                            </div>
+                            <span class="progress-type">PHP / AJAX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="carousel-global no-margin" id="work">
+    <div class="text-center carousel-slide">
+        <div class="col-xs-12 col-sm-12 col-md-12 carousel-position">
+            <h3>PORTFOLIO</h3>
+            <hr class="small_3">
+            <div class="well">
+                <div id="myCarousel" class="carousel_1 slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img1.jpg" alt="Image"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img2.jpg" alt="Image"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img3.jpg" alt="Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img4.jpg" alt="Image"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img5.jpg" alt="Image"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#x" class="thumbnail"><img class="img-responsive" src="images/img6.jpg" alt="Image"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <section id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 text-center">
+                <h3>CONTACT</h3>
+                <hr>
+                <div class="col-sm-12">
+                    <ul class="social">
+                        <li><a href="#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              
+                <form class="form-group" action="mail.php" method="POST">
+                    <div class="col-md-4 col-md-offset-2">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Name" name="name">
+                    </div>
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <label></label>
+                        <textarea class="form-control" rows="10" placeholder="Your message here.." name="text"></textarea>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5 poziom">
+                        <input type="submit" class="btn btn-danger" value="Send">
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+        <div class="footer-border text-center"></div>
+        <p class="text-center email">Yura05158@gmail.com</p>
+    </div>
+</section>
+    <p><a id="to-top" href="#" class="btn btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a></p>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
