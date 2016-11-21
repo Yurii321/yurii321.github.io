@@ -1,39 +1,19 @@
-<!doctype html>
-<html>
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <title>Ваше сообщение успешно отправлено</title>
-</head>
- 
-<body>
 <?php
-  if(isset($_POST["send"])) {
-    $to = "yura05158@gmail.com";
-    $name = htmlspecialchars ($_POST["name"]);
-    $email = htmlspecialchars ($_POST["email"]);
-    $message = htmlspecialchars ($_POST["message"]);
-    $error_name = "";
-    $error_email = "";
-    $error_message = "";
-    $error = false;
-    if($email == "" || !preg_match ("/@/", $email)) {
-    $error_email = "ERROR";
-    $error = true;
-    }
-    if(strlen($name) == 0) {
-     $error_name = "ERROR";
-     $error = true;
-    }
-    if(strlen($message) == 0) {
-     $error_message = "ERROR";
-     $error = true;
-    }
-    if(!error) {
-      $subject = "Tema";
-      $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
-      mail ($to, $subject, $name, $message, $headers);
-    }
-  }
+$kuda='yura05158@gmail.com';//куда отправлять почту?
+$zagolovok='сообщение с сайта';
+$headers='Content-type: text/plaint; charset="utf-8"';
+
+if (isset($_POST['send'])){
+	//если существует переменная, значит начнем получать информацию из формы
+	$name=$_POST['name'];
+	$email=$_POST['email'];
+	$message=$_POST['message'];
+
+	$messages=$message."\n".$email."\n".$name;
+
+	if (mail($kuda,$zagolovok,$messages,$headers)){echo "Ваше сообщение доставлено.";}
+	
+	}
+
+
 ?>
-</body>
-</html>
