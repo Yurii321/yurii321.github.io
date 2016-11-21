@@ -190,8 +190,7 @@
                 </div>
             </div>
             <div class="col-lg-10 col-lg-offset-1 text-center">
-              
-                <form class="form-group" action="mail.php" method="POST">
+                <form class="form-group" action="mail.php" method="POST" name="feedback">
                     <div class="col-md-4 col-md-offset-2">
                         <label></label>
                         <input type="text" class="form-control" placeholder="Name" name="name">
@@ -202,13 +201,12 @@
                     </div>
                     <div class="col-md-8 col-md-offset-2">
                         <label></label>
-                        <textarea class="form-control" rows="10" placeholder="Your message here.." name="text"></textarea>
+                        <textarea class="form-control" rows="10" placeholder="Your message here.." name="message"></textarea>
                     </div>
                     <div class="col-md-2 col-md-offset-5 poziom">
-                        <input type="submit" class="btn btn-danger" value="Send">
+                        <input type="submit" name="send" class="btn btn-danger" value="Send">
                     </div>
                 </form>
-               
             </div>
         </div>
         <div class="footer-border text-center"></div>
