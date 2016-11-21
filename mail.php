@@ -1,3 +1,11 @@
+<!doctype html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>Ваше сообщение успешно отправлено</title>
+</head>
+ 
+<body>
 <?php
   if(isset($_POST["send"])) {
     $to = "yura05158@gmail.com";
@@ -27,3 +35,5 @@
     }
   }
 ?>
+</body>
+</html>
